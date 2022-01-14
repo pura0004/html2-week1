@@ -46,7 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 
-
+/******************************************************
+                    Default styles
+******************************************************/
 
 }
 html{
@@ -57,9 +59,34 @@ html{
 
 body{
     line-height: 1.6;
+    width:800px;
+    margin: 0 auto;
+    background-color: blanchedalmond;
 }
 
-/* target a class */
+
+/* to target an ID, use the # before the ID name */
+#reallyBig{
+    font-size:48px;
+}
+
+/* to target  class, use the . before the classname */
 .larger{
     font-size:24px;
+}
+
+/* target paragraphs that are inside the main tag */
+main p{
+    color:red;
+}
+
+/* CSS box model includes margin, border, and padding:
+    margin is outside the element and pushes other elements away
+    padding is inside the element and pushes content away from the element's edge
+    border is in between the two */
+main{
+    background-color:cadetblue;
+    margin:10px; /* one value means apply to all sides */
+    padding:15px;
+    border: 2px solid black;
 }
